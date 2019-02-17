@@ -1,8 +1,38 @@
-# Hands on Lab: Connect virtual networks with virtual network peering / Filter network traffic with a network security group using the Azure Portal
+---
+title: Connect virtual networks with virtual network peering - tutorial - Azure portal | Microsoft Docs
+description: In this tutorial, you learn how to connect virtual networks with virtual network peering, using the Azure portal.
+services: virtual-network
+documentationcenter: virtual-network
+author: jimdial
+manager: jeconnoc
+editor: ''
+tags: azure-resource-manager
+Customer intent: I want to connect two virtual networks so that virtual machines in one virtual network can communicate with virtual machines in the other virtual network.
 
-You can connect virtual networks to each other with virtual network peering. These virtual networks can be in the same region or different regions (also known as Global VNet peering). Once virtual networks are peered, resources in both virtual networks are able to communicate with each other, with the same latency and bandwidth as if the resources were in the same virtual network. 
+ms.assetid: 
+ms.service: virtual-network
+ms.devlang: azurecli
+ms.topic: tutorial
+ms.tgt_pltfrm: virtual-network
+ms.workload: infrastructure
+ms.date: 08/16/2018
+ms.author: jdial
+ms.custom: 
+---
 
-You can filter network traffic inbound to and outbound from a virtual network subnet with a network security group. Network security groups contain security rules that filter network traffic by IP address, port, and protocol. Security rules are applied to resources deployed in a subnet. 
+# Tutorial: Connect virtual networks with virtual network peering using the Azure portal
+
+You can connect virtual networks to each other with virtual network peering. These virtual networks can be in the same region or different regions (also known as Global VNet peering). Once virtual networks are peered, resources in both virtual networks are able to communicate with each other, with the same latency and bandwidth as if the resources were in the same virtual network. In this tutorial, you learn how to:
+
+> [!div class="checklist"]
+> * Create two virtual networks
+> * Connect two virtual networks with a virtual network peering
+> * Deploy a virtual machine (VM) into each virtual network
+> * Communicate between VMs
+
+If you prefer, you can complete this tutorial using the [Azure CLI](tutorial-connect-virtual-networks-cli.md) or [Azure PowerShell](tutorial-connect-virtual-networks-powershell.md).
+
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Log in to Azure 
 
