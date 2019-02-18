@@ -20,7 +20,7 @@ Log in to the Azure portal at https://portal.azure.com.
     |Setting|Value|
     |---|---|
     |Name|myVirtualNetwork1|
-    |Address space|10.0.0.0/16|
+    |Address space|10.0.0.0/16 - You might receive a warning that the address space overlaps. You can ignore this. |
     |Subscription| Select your subscription.|
     |Resource group| Select **Create new** and enter *myResourceGroup*.|
     |Location| Select **West Europe**.|
@@ -95,6 +95,8 @@ Create a VM in each virtual network so that you can communicate between them in 
     |---|---|
     |Virtual network| myVirtualNetwork1 - If it's not already selected, select **Virtual network** and then select **myVirtualNetwork1** under **Choose virtual network**.|
     |Subnet| Subnet1 - If it's not already selected, select **Subnet** and then select **Subnet1** under **Choose subnet**.|
+    |Public inbound ports|Allow selected ports - RDP|
+    |Boot diagnostics|Off|
     
     ![Virtual machine settings](./media/tutorial-connect-virtual-networks-portal/virtual-machine-settings.png)
  
