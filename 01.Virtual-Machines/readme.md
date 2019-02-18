@@ -89,24 +89,24 @@ The [Azure Portal](https://portal.azure.com) allows you to perform the basic ope
 
 1. In the Networking blade, leave the defaults. Under **Public Inbound ports** select **Allow selected ports** and select **SSH**.
 
-    ![Selecting disk type](Images/provision-networking.png)
+    ![Vm networking](Images/provision-networking.png)
 
 1. Click the **create new** link under **Public IP**.  Enter a name for your new PIP: "vm-lab-[[yourname]]-ip". Continue to the management section.
 
-    ![Selecting disk type](Images/provision-pip.png)
+    ![public ip](Images/provision-pip.png)
 
 1. On theh management section, enable both **boot diagnostics** and **OS guest diagnostics**. A storage account is required, create one if the wizard does not automatically do so.
 
-    ![Selecting disk type](Images/provision-mgmnt.png)
+    ![Vm management](Images/provision-mgmnt.png)
 
 1. Skip the guest and tags section and continue to the review section. Press the **Create** button.
     ![Reviewing the virtual machine settings](Images/provision-settings-reviewsummary.png)
 
      _Reviewing the virtual machine settings_
 
-1. When the provisioning process completes after a couple of minutes, a blade for the VM opens. 
+1. When the provisioning process completes after a couple of minutes, All items indicate succes.
  
-    ![Reviewing the virtual machine settings](Images/prov-wait.png)
+    ![Reviewing the virtual machine settings](Images/prov-wait.PNG)
 
 
 1. Click **vm-lab-[[yourname]]** to open the resource group that contains all of the resources related to this VM.     
