@@ -1,26 +1,3 @@
----
-title: Route network traffic - tutorial - Azure portal
-titlesuffix: Azure Virtual Network
-description: In this tutorial, learn how to route network traffic with a route table using the Azure portal.
-services: virtual-network
-documentationcenter: virtual-network
-author: jimdial
-manager: jeconnoc
-editor: ''
-tags: azure-resource-manager
-Customer intent: I want to route traffic from one subnet, to a different subnet, through a network virtual appliance.
-
-ms.assetid: 
-ms.service: virtual-network
-ms.devlang: azurecli
-ms.topic: tutorial
-ms.tgt_pltfrm: virtual-network
-ms.workload: infrastructure
-ms.date: 12/12/2018
-ms.author: jdial
-ms.custom: mvc
----
-
 # Tutorial: Route network traffic with a route table using the Azure portal
 
 Azure routes traffic between all subnets within a virtual network, by default. You can create your own routes to override Azure's default routing. The ability to create custom routes is helpful if, for example, you want to route traffic between subnets through a network virtual appliance (NVA). In this tutorial, you learn how to:

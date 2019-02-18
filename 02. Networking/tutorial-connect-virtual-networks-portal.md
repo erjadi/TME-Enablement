@@ -1,25 +1,3 @@
----
-title: Connect virtual networks with virtual network peering - tutorial - Azure portal | Microsoft Docs
-description: In this tutorial, you learn how to connect virtual networks with virtual network peering, using the Azure portal.
-services: virtual-network
-documentationcenter: virtual-network
-author: jimdial
-manager: jeconnoc
-editor: ''
-tags: azure-resource-manager
-Customer intent: I want to connect two virtual networks so that virtual machines in one virtual network can communicate with virtual machines in the other virtual network.
-
-ms.assetid: 
-ms.service: virtual-network
-ms.devlang: azurecli
-ms.topic: tutorial
-ms.tgt_pltfrm: virtual-network
-ms.workload: infrastructure
-ms.date: 08/16/2018
-ms.author: jdial
-ms.custom: 
----
-
 # Tutorial: Connect virtual networks with virtual network peering using the Azure portal
 
 You can connect virtual networks to each other with virtual network peering. These virtual networks can be in the same region or different regions (also known as Global VNet peering). Once virtual networks are peered, resources in both virtual networks are able to communicate with each other, with the same latency and bandwidth as if the resources were in the same virtual network. In this tutorial, you learn how to:
