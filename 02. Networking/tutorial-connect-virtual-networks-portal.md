@@ -2,11 +2,10 @@
 
 You can connect virtual networks to each other with virtual network peering. These virtual networks can be in the same region or different regions (also known as Global VNet peering). Once virtual networks are peered, resources in both virtual networks are able to communicate with each other, with the same latency and bandwidth as if the resources were in the same virtual network. In this tutorial, you learn how to:
 
-> [!div class="checklist"]
-> * Create two virtual networks
-> * Connect two virtual networks with a virtual network peering
-> * Deploy a virtual machine (VM) into each virtual network
-> * Communicate between VMs
+* Create two virtual networks
+* Connect two virtual networks with a virtual network peering
+* Deploy a virtual machine (VM) into each virtual network
+* Communicate between VMs
 
 ## Log in to Azure 
 

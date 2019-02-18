@@ -2,11 +2,10 @@
 
 You can filter network traffic inbound to and outbound from a virtual network subnet with a network security group. Network security groups contain security rules that filter network traffic by IP address, port, and protocol. Security rules are applied to resources deployed in a subnet. In this tutorial, you learn how to:
 
-> [!div class="checklist"]
-> * Create a network security group and security rules
-> * Create a virtual network and associate a network security group to a subnet
-> * Deploy virtual machines (VM) into a subnet
-> * Test traffic filters
+* Create a network security group and security rules
+* Create a virtual network and associate a network security group to a subnet
+* Deploy virtual machines (VM) into a subnet
+* Test traffic filters
 
 ## Sign in to Azure
 

@@ -2,14 +2,13 @@
 
 Azure routes traffic between all subnets within a virtual network, by default. You can create your own routes to override Azure's default routing. The ability to create custom routes is helpful if, for example, you want to route traffic between subnets through a network virtual appliance (NVA). In this tutorial, you learn how to:
 
-> [!div class="checklist"]
-> * Create a route table
-> * Create a route
-> * Create a virtual network with multiple subnets
-> * Associate a route table to a subnet
-> * Create an NVA that routes traffic
-> * Deploy virtual machines (VM) into different subnets
-> * Route traffic from one subnet to another through an NVA
+* Create a route table
+* Create a route
+* Create a virtual network with multiple subnets
+* Associate a route table to a subnet
+* Create an NVA that routes traffic
+* Deploy virtual machines (VM) into different subnets
+* Route traffic from one subnet to another through an NVA
 
 ## Sign in to Azure
 
