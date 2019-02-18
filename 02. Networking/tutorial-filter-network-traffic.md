@@ -1,22 +1,3 @@
----
-title: Filter network traffic - tutorial - Azure Portal
-titlesuffix: Azure Virtual Network
-description: In this tutorial, you learn how to filter network traffic to a subnet, with a network security group, using the Azure Portal.
-services: virtual-network
-documentationcenter: virtual-network
-author: jimdial
-tags: azure-resource-manager
-Customer intent: I want to filter network traffic to virtual machines that perform similar functions, such as web servers.
-ms.service: virtual-network
-ms.devlang: 
-ms.topic: tutorial
-ms.tgt_pltfrm: virtual-network
-ms.workload: infrastructure
-ms.date: 12/13/2018
-ms.author: jdial
-
----
-
 # Tutorial: Filter network traffic with a network security group using the Azure Portal
 
 You can filter network traffic inbound to and outbound from a virtual network subnet with a network security group. Network security groups contain security rules that filter network traffic by IP address, port, and protocol. Security rules are applied to resources deployed in a subnet. In this tutorial, you learn how to:
@@ -26,10 +7,6 @@ You can filter network traffic inbound to and outbound from a virtual network su
 > * Create a virtual network and associate a network security group to a subnet
 > * Deploy virtual machines (VM) into a subnet
 > * Test traffic filters
-
-If you prefer, you can complete this tutorial using the [Azure CLI](tutorial-filter-network-traffic-cli.md) or [PowerShell](tutorial-filter-network-traffic-powershell.md).
-
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Sign in to Azure
 
@@ -47,7 +24,7 @@ Sign in to the Azure portal at https://portal.azure.com.
     | Address space           | 10.0.0.0/16                                        |
     | Subscription            | Select your subscription.                          |
     | Resource group          | Select **Create new** and enter *myResourceGroup*. |
-    | Location                | Select **East US**.                                |
+    | Location                | Select **West Europe**.                            |
     | Subnet- Name            | mySubnet                                           |
     | Subnet - Address range  | 10.0.0.0/24                                        |
 
@@ -64,7 +41,7 @@ An application security group enables you to group together servers with similar
     | Name           | myAsgWebServers                                               |
     | Subscription   | Select your subscription.                                     |
     | Resource group | Select **Use existing** and then select  **myResourceGroup**. |
-    | Location       | East US                                                       |
+    | Location       | West Europe                                                   |
 
 4. Complete step 3 again, specifying the following values:
 
@@ -73,7 +50,7 @@ An application security group enables you to group together servers with similar
     | Name           | myAsgMgmtServers                                              |
     | Subscription   | Select your subscription.                                     |
     | Resource group | Select **Use existing** and then select  **myResourceGroup**. |
-    | Location       | East US                                                       |
+    | Location       | West Europe                                                   |
 
 ## Create a network security group
 
@@ -86,7 +63,7 @@ An application security group enables you to group together servers with similar
     |Name|myNsg|
     |Subscription| Select your subscription.|
     |Resource group | Select **Use existing** and then select *myResourceGroup*.|
-    |Location|East US|
+    |Location|West Europe|
 
 ## Associate network security group to subnet
 
@@ -142,10 +119,10 @@ Create two VMs in the virtual network.
     |---|---|
     |Name|myVmWeb|
     |User name| Enter a user name of your choosing.|
-    |Password| Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](../virtual-machines/windows/faq.md?toc=%2fazure%2fvirtual-network%2ftoc.json#what-are-the-password-requirements-when-creating-a-vm).|
+    |Password| Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq?toc=%2fazure%2fnetwork-watcher%2ftoc.json#what-are-the-password-requirements-when-creating-a-vm).|
     |Subscription| Select your subscription.|
     |Resource group| Select **Use existing** and select **myResourceGroup**.|
-    |Location| Select **East US**|
+    |Location| Select **West Europe**|
 
 4. Select a size for the VM and then select **Select**.
 5. Under **Settings**, select the following values, accept the remaining defaults, and then select **OK**:
@@ -212,12 +189,3 @@ When no longer needed, delete the resource group and all of the resources it con
 1. Enter *myResourceGroup* in the **Search** box at the top of the portal. When you see **myResourceGroup** in the search results, select it.
 2. Select **Delete resource group**.
 3. Enter *myResourceGroup* for **TYPE THE RESOURCE GROUP NAME:** and select **Delete**.
-
-## Next steps
-
-In this tutorial, you created a network security group and associated it to a virtual network subnet. To learn more about network security groups, see [Network security group overview](security-overview.md) and [Manage a network security group](manage-network-security-group.md).
-
-Azure routes traffic between subnets by default. You may instead, choose to route traffic between subnets through a VM, serving as a firewall, for example. To learn how to create a route table, advance to the next tutorial.
-
-> [!div class="nextstepaction"]
-> [Create a route table](./tutorial-create-route-table-portal.md)

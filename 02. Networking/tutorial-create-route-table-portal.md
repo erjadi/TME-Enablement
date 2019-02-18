@@ -34,10 +34,6 @@ Azure routes traffic between all subnets within a virtual network, by default. Y
 > * Deploy virtual machines (VM) into different subnets
 > * Route traffic from one subnet to another through an NVA
 
-If you prefer, you can finish this tutorial using the [Azure CLI](tutorial-create-route-table-cli.md) or [Azure PowerShell](tutorial-create-route-table-powershell.md).
-
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-
 ## Sign in to Azure
 
 Sign in to the [Azure portal](https://portal.azure.com).
@@ -53,7 +49,7 @@ Sign in to the [Azure portal](https://portal.azure.com).
     | Name | Enter *myRouteTablePublic*. |
     | Subscription | Select your subscription. |
     | Resource group | Select **Create new**, enter *myResourceGroup*, and select *OK*. |
-    | Location | Leave the default **East US**.
+    | Location | Leave the default **West Europe**. |
     | BGP route propagation | Leave the default **Enabled**. |
 
 1. Select **Create**.
@@ -95,7 +91,7 @@ Before you can associate a route table to a subnet, you have to create a virtual
     | Address space | Enter *10.0.0.0/16*. |
     | Subscription | Select your subscription. |
     | Resource group | Select ***Select existing*** > **myResourceGroup**. |
-    | Location | Leave the default **East US**. |
+    | Location | Leave the default **West Europe**. |
     | Subnet - Name | Enter *Public*. |
     | Subnet - Address range | Enter *10.0.0.0/24*. |
 
@@ -154,13 +150,13 @@ NVAs are VMs that help with network functions like routing and firewall optimiza
     | Resource group | Select **myResourceGroup**. |
     | **INSTANCE DETAILS** |  |
     | Virtual machine name | Enter *myVmNva*. |
-    | Region | Select **East US**. |
+    | Region | Select **West Europe**. |
     | Availability options | Leave the default **No infrastructure redundancy required**. |
     | Image | Leave the default **Windows Server 2016 Datacenter**. |
     | Size | Leave the default **Standard DS1 v2**. |
     | **ADMINISTRATOR ACCOUNT** |  |
     | Username | Enter a user name of your choosing. |
-    | Password | Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](../virtual-machines/windows/faq.md?toc=%2fazure%2fvirtual-network%2ftoc.json#what-are-the-password-requirements-when-creating-a-vm).|
+    | Password | Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq?toc=%2fazure%2fnetwork-watcher%2ftoc.json#what-are-the-password-requirements-when-creating-a-vm).|
     | Confirm Password | Reenter password. |
     | **INBOUND PORT RULES** |  |
     | Public inbound ports | Leave the default **None**.
@@ -382,12 +378,3 @@ When no longer needed, delete the resource group and all resources it has:
 1. Select **Delete resource group**.
 
 1. Enter *myResourceGroup* for **TYPE THE RESOURCE GROUP NAME:** and select **Delete**.
-
-## Next steps
-
-In this tutorial, you created a route table and associated it to a subnet. You created a simple NVA that routed traffic from a public subnet to a private subnet. Now that you know how to do that, you can deploy different pre-configured NVAs from the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/networking). They carry out many network functions you'll find useful. To learn more about routing, see [Routing overview](virtual-networks-udr-overview.md) and [Manage a route table](manage-route-table.md).
-
-While you can deploy many Azure resources within a virtual network, Azure can't deploy resources for some PaaS services into a virtual network. It's possible to restrict access to the resources of some Azure PaaS services. The restriction must only be traffic from a virtual network subnet though. To learn how to restrict network access to Azure PaaS resources, advance to the next tutorial.
-
-> [!div class="nextstepaction"]
-> [Restrict network access to PaaS resources](tutorial-restrict-network-access-to-resources.md)

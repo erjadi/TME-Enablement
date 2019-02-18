@@ -30,10 +30,6 @@ You can connect virtual networks to each other with virtual network peering. The
 > * Deploy a virtual machine (VM) into each virtual network
 > * Communicate between VMs
 
-If you prefer, you can complete this tutorial using the [Azure CLI](tutorial-connect-virtual-networks-cli.md) or [Azure PowerShell](tutorial-connect-virtual-networks-powershell.md).
-
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-
 ## Log in to Azure 
 
 Log in to the Azure portal at https://portal.azure.com.
@@ -50,7 +46,7 @@ Log in to the Azure portal at https://portal.azure.com.
     |Address space|10.0.0.0/16|
     |Subscription| Select your subscription.|
     |Resource group| Select **Create new** and enter *myResourceGroup*.|
-    |Location| Select **East US**.|
+    |Location| Select **West Europe**.|
     |Subnet Name|Subnet1|
     |Subnet Address range|10.0.0.0/24|
 
@@ -112,9 +108,9 @@ Create a VM in each virtual network so that you can communicate between them in 
     |---|---|
     |Name|myVm1|
     |User name| Enter a user name of your choosing.|
-    |Password| Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](../virtual-machines/windows/faq.md?toc=%2fazure%2fvirtual-network%2ftoc.json#what-are-the-password-requirements-when-creating-a-vm).|
+    |Password| Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq?toc=%2fazure%2fnetwork-watcher%2ftoc.json#what-are-the-password-requirements-when-creating-a-vm).|
     |Resource group| Select **Use existing** and then select **myResourceGroup**.|
-    |Location| Select **East US**.|
+    |Location| Select **West Europe**.|
 4. Select a VM size under **Choose a size**.
 5. Select the following values for **Settings**, then select **OK**:
     |Setting|Value|
