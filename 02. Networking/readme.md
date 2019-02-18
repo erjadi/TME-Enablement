@@ -6,5 +6,5 @@ You can filter network traffic inbound to and outbound from a virtual network su
 
 ## Exercises
 
-1. ![Virtual Network Peering](.\tutorial-connect-virtual-networks-portal.md)
-2. ![Virtual Network Peering](.\tutorial-filter-network-traffic.md) 
+1. ![Virtual Network Peering](tutorial-connect-virtual-networks-portal.md)
+2. ![Filter Network Traffic with NSGs](tutorial-filter-network-traffic.md) 
