@@ -10,4 +10,10 @@ Azure routes traffic between all subnets within a virtual network, by default. Y
 
 1. [Virtual network peering](tutorial-connect-virtual-networks-portal.md)
 2. [Filter network traffic with NSGs](tutorial-filter-network-traffic.md) 
-3. [Set up custom routes](tutorial-create-route-table-portal)
+3. [Set up custom routes](tutorial-create-route-table-portal.md)
+
+## Remarks
+
+Since we cannot connect to RDP we will not use Windows Server (as described in the exercises). Please use the following settings:
+
+1. Use the **Ubuntu 
