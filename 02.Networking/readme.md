@@ -14,6 +14,8 @@ Azure routes traffic between all subnets within a virtual network, by default. Y
 
 ## Remarks
 
-Since we cannot connect to RDP we will not use Windows Server (as described in the exercises). Please use the following settings:
+To enable ip routing on Ubuntu, please use the following:
 
-1. Use the **Ubuntu 
+```
+sudo sysctl -w net.ipv4.ip_forward=1
+```
