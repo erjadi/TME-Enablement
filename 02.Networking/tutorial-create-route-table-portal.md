@@ -113,9 +113,9 @@ Before you can associate a route table to a subnet, you have to create a virtual
 
 ## Create an NVA
 
-NVAs are VMs that help with network functions like routing and firewall optimization. You can select a different operating system if you want. This tutorial assumes you're using **Ubuntu Server 18.04**.
+NVAs are VMs that help with network functions like routing and firewall optimization. You can select a different operating system if you want. This tutorial assumes you're using **Windows Server 2016 Datacenter**.
 
-1. On the upper-left side of the screen, select **Create a resource** > **Compute** > **Ubuntu Server 18.04**.
+1. On the upper-left side of the screen, select **Create a resource** > **Compute** > **Windows Server 2016 Datacenter**.
 
 1. In **Create a virtual machine - Basics**, enter or select this information:
 
@@ -128,7 +128,7 @@ NVAs are VMs that help with network functions like routing and firewall optimiza
     | Virtual machine name | Enter *myVmNva*. |
     | Region | Select **West Europe**. |
     | Availability options | Leave the default **No infrastructure redundancy required**. |
-    | Image | Leave the default **Ubuntu Server 18.04**. |
+    | Image | Leave the default **Windows Server 2016 Datacenter**. |
     | Size | Leave the default **Standard DS1 v2**. |
     | **ADMINISTRATOR ACCOUNT** |  |
     | Username | Enter a user name of your choosing. |

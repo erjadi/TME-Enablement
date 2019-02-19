@@ -111,7 +111,7 @@ Create two VMs in the virtual network.
 ### Create the first VM
 
 1. Select **+ Create a resource** found on the upper, left corner of the Azure portal.
-2. Select **Compute**, and then select **Ubuntu Server 18.04**.
+2. Select **Compute**, and then select **Windows Server 2016 Datacenter**.
 3. Enter, or select, the following information, accept the defaults for the remaining settings, and then select **OK**:
 
     |Setting|Value|
