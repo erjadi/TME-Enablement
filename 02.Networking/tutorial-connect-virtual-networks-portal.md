@@ -78,7 +78,7 @@ Create a VM in each virtual network so that you can communicate between them in 
 ### Create the first VM
 
 1. Select **+ Create a resource** on the upper, left corner of the Azure portal.
-2. Select **Compute**, and then select **Ubuntu Server 18.04 Datacenter**. You can select a different operating system, but the remaining steps assume you selected **Ubuntu Server 18.04 Datacenter**. 
+2. Select **Compute**, and then select **Ubuntu Server 18.04**. You can select a different operating system, but the remaining steps assume you selected **Ubuntu Server 18.04**. 
 3. Enter, or select, the following information for **Basics**, accept the defaults for the remaining settings, and then select **Create**:
 
     |Setting|Value|
